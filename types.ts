@@ -15,8 +15,8 @@ export interface FoodItem {
   category: FoodCategory;
   purchaseDate: string;
   expiryDate: string;
-  quantity: string; // Description textuelle (ex: "500g")
-  currentQuantity: number; // Quantité numérique pour décompte (ex: 3)
+  quantity: string;
+  currentQuantity: number;
   isUsed: boolean;
 }
 
@@ -26,7 +26,7 @@ export interface Recipe {
   ingredients: string[];
   instructions: string[];
   prepTime: string;
-  difficulty: 'Facile' | 'Moyen' | 'Difficile';
+  difficulty: 'Facile' | 'Moyen' | 'Difficile' | string;
   imageUrl?: string;
 }
 
